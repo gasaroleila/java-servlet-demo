@@ -1,15 +1,10 @@
 package com.example.serveletdemo.Models;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 
-@Entity
+
+
 public class Student {
-
-    @Id
     private Long id;
-    @Column(name = "names", nullable = false)
     private String firstName;
     private String lastName;
     private String gender;

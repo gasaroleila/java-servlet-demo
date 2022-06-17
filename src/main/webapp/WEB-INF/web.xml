@@ -9,11 +9,11 @@
         <welcome-file>default.jsp</welcome-file> </welcome-file-list> students_db -->
     <display-name>Students_record</display-name>
     <welcome-file-list>
-        <welcome-file>add_student.jsp</welcome-file>
+        <welcome-file>add_students.jsp</welcome-file>
     </welcome-file-list>
     <context-param>
         <param-name>jdbcURL</param-name>
-        <param-value>jdbc:mysql://localhost:3306/students_db?characterEncoding=utf8</param-value>
+        <param-value>jdbc:mysql://localhost:3306/java_web?serverTimezone=UTC</param-value>
     </context-param>
     <context-param>
         <param-name>jdbcUsername</param-name>

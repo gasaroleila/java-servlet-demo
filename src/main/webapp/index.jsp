@@ -10,7 +10,7 @@
 <br/>
 <a href="/hello-servlet">Hello Servlet</a>
 <a href="/servletDemo/?name=leila">Go to servlet</a>
-<a href="/servletDemo/new?name=leila">Add Students</a>
+<a href="add_student.jsp">Add Students</a>
 <a href="/servletDemo/list?name=Gasaro">List students</a>
 
 </body>

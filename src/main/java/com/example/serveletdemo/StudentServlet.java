@@ -1,23 +1,21 @@
-package com.example.serveletdemo.Controllers;
+package com.example.serveletdemo;
 
 import com.example.serveletdemo.Models.Student;
 import com.example.serveletdemo.dao.StudentDao;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import java.io.IOException;
+import java.io.*;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * Servlet implementation class Students
- */
-//@WebServlet("/")
-public class StudentController extends HttpServlet {
 
+@WebServlet(name = "Students", value ={"/"})
+public class StudentServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
     private StudentDao studentDao;
 
