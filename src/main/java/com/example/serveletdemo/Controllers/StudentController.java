@@ -2,6 +2,7 @@ package com.example.serveletdemo.Controllers;
 
 import com.example.serveletdemo.Models.Student;
 import com.example.serveletdemo.dao.StudentDao;
+import com.example.serveletdemo.dao.StudentDaoHibernate;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -19,13 +20,15 @@ import java.util.List;
 public class StudentController extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
-    private StudentDao studentDao;
+//    private StudentDao studentDao;
+    private StudentDaoHibernate studentDao;
 
     public void init() {
-        String jdbcURL =  getServletContext().getInitParameter("jdbcURL");
-        String jdbcUsername = getServletContext().getInitParameter("jdbcUsername");
-        String jdbcPassword = getServletContext().getInitParameter("jdbcPassword");
-        studentDao = new StudentDao(jdbcURL, jdbcUsername, jdbcPassword);
+//        String jdbcURL =  getServletContext().getInitParameter("jdbcURL");
+//        String jdbcUsername = getServletContext().getInitParameter("jdbcUsername");
+//        String jdbcPassword = getServletContext().getInitParameter("jdbcPassword");
+//        studentDao = new StudentDaoHibernate(jdbcURL, jdbcUsername, jdbcPassword);
+        studentDao = new StudentDaoHibernate();
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

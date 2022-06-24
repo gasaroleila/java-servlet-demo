@@ -24,6 +24,7 @@ public class StudentServlet extends HttpServlet {
         String jdbcUsername = getServletContext().getInitParameter("jdbcUsername");
         String jdbcPassword = getServletContext().getInitParameter("jdbcPassword");
         studentDao = new StudentDao(jdbcURL, jdbcUsername, jdbcPassword);
+
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

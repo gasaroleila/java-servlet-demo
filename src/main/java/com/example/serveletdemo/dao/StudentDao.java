@@ -1,7 +1,7 @@
 package com.example.serveletdemo.dao;
 
 import com.example.serveletdemo.Models.Student;
-
+//Data Access Object
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

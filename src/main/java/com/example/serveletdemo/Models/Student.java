@@ -1,9 +1,12 @@
 package com.example.serveletdemo.Models;
 
+import javax.persistence.*;
 
-
-
+@Entity
+@Table(name = "Students")
 public class Student {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String firstName;
     private String lastName;
